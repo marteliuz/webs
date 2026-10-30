@@ -1,0 +1,14 @@
+Creating this log file :)
+Sistema operativo: WIN
+Navegador: CHROME
+Agente: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36
+Direccion IP: ::1
+(❍ᴥ❍ʋ)
+2015-10-23 20:41:54.301810 - INFO - Here we go!
+2015-10-23 20:41:54.304177 - INFO - Subiendo archivo : Licitacion_Publicada.xls
+2015-10-23 20:41:54.306405 - INFO - Tipo: application/vnd.ms-excel
+2015-10-23 20:41:54.308912 - INFO - Largo: 20722688 KB
+2015-10-23 20:41:54.734853 - INFO - Archivo cargado en: ../file_storage/Licitacion_Publicada.xls
+2015-10-23 20:41:54.737675 - INFO - limpiando tabla con query 'TRUNCATE dblicitaciones.tbdata;'
+2015-10-23 20:41:55.542984 - INFO - Clear complete!
+2015-10-23 20:41:55.545769 - INFO - leyendo archivo

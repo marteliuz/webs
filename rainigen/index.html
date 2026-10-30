@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Servicios Integrales RAINIGEN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Provide keywords in content attribute -->
+  <meta content="" name="keywords">
+  <!-- Provide description in content attribute -->
+  <meta content="" name="description">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!--Google Fonts-->
+  <link href='http://fonts.googleapis.com/css?family=Aladin&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <!--Font Awesome-->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!--Bootshape-->
+  <link href="css/bootshape.css" rel="stylesheet">
+  <!--Bootshape-->
+  <link href="css/jcarousel.css" rel="stylesheet">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Include jcarousel -->
+  <script src="js/jquery.jcarousel.min.js"></script>
+  <script src="js/jcarousel.responsive.js"></script>
+  <!-- Include onepage scroll -->
+  <script src="js/jquery.onepage-scroll.js"></script>
+  <!-- Include Bootshape -->
+  <script src="js/bootshape.js"></script>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  <script src="js/lib_ajax.js"></script>
+    <!-- Insert to your webpage before the </head> -->
+  <script src="carouselengine/amazingcarousel.js"></script>
+  <link rel="stylesheet" type="text/css" href="carouselengine/initcarousel-1.css">
+  <script src="carouselengine/initcarousel-1.js"></script>
+  <!-- End of head section HTML codes -->
+  <style>
+    @media screen and (max-device-width: 800px) {
+      html {
+        background: url(img/rainigen.png) #ffffff no-repeat center center fixed;
+      }
+      #bgvid {
+        display: none;
+      }
+    }
+
+    nav {
+      position:absolute;
+      top: 0px;
+      right: 0px;
+
+      max-width: 700px;
+      /* The mask-image gives us some extra fading. It is not necessary but without this, you can't face out the box-shadows. This clips our menu */
+      mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+      margin: 0 auto;
+      /* Using padding instead of margin for the top and bottom here will keep our box-shadow visible and not affected by the mask-image */
+      padding: 75px 0;
+    }
+
+    nav ul {
+      text-align: center;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+      width: 100%;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      padding: 20px;
+      font-family: "sans-serif";
+      color: rgba(0, 0, 0, 0.5);
+      text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+      font-size: 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 255, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 0.1);
+      color: rgba(0, 0, 255, 0.5);
+    }
+
+    video#bgvid { 
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        background: url(img/rainigen.png) no-repeat;
+        background-size: cover; 
+    }
+  </style>
+</head>
+<body>
+  <!-- EL TERRIBLE HOME -->
+<div class="wrap">
+  <section class="text-center">
+    <a name="Home"></a>
+    <div class="brand-holder">
+      <video autoplay loop poster="img/rainigen.png" id="bgvid" class="img-responsive">
+        <source src="img/rainigen.mp4" type="video/mp4">
+      </video>
+  </div>
+        <!-- MENU FLOTANTE -->
+      <div class="mennu">
+      <nav>
+        <ul>
+          <li>
+            <a class="blue" href="#QuienesSomos">Quienes Somos</a>
+          </li>
+          <li>
+            <a class="blue" href="#Servicios">Nuestros Servicios</a>
+          </li>
+          <li>
+            <a class="blue" href="#Contacto">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <!-- QUIENES SOMOS -->
+  <section class="text-center features">
+    <a name="QuienesSomos"></a>
+    <div class="container">
+      <!-- <h1 class="margin-holder title">Quienes Somos </h1> -->
+      <h1 class="title blue">Quienes Somos</h1>
+        <div class="legend" style="text-align:justify;"> Somos una empresa de servicios integrales de aseo y ornato, con mas de dos décadas de experiencia adquirida en Suiza, lo que nos ha permitido posicionarnos en el rubro nacional con excelente recepción por parte de nuestros clientes.
+        Nos preocupamos por la calidad de nuestro trabajo y el Medio Ambiente. 
+        Contamos con maquinarias e instrumentos de ultima generación y seleccionamos cuidadosamente los productos con los que trabajamos que cumplan y respeten la normativa internacional ISO.<br>
+        Nuestro equipo humano constantemente se encuentra en capacitación para asegurar la mejor experiencia de nuestro servicio.
+          <img src="http://botutomarket.com/img/banner_quienes.jpg" class="img-responsive">
+       </div>
+    </div>
+  </section>
+
+<!-- SERVICIOS -->
+  <section class="grey-bg features">
+    <a name="Servicios"></a>
+    <div class="container">
+      <h1 class="title blue margin-holder text-center"> Nuestros Servicios </h1>
+      <div class="col-md-6 col-md-offset-1 feature-description">
+       <!-- Insert to your webpage where you want to display the carousel -->
+        <div id="amazingcarousel-container-1">
+            <div id="amazingcarousel-1" style="display:none;position:relative;width:100%;max-width:500px;margin:0px auto 0px;">
+                <div class="amazingcarousel-list-container">
+                    <ul class="amazingcarousel-list">
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                              <div class="amazingcarousel-image"><img src="images/14.png" /></div>                    
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                              <div class="amazingcarousel-image"><img src="images/11.png" /></div>                    
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                              <div class="amazingcarousel-image"><img src="images/4.png" /></div>                    
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                              <div class="amazingcarousel-image"><img src="images/1.png" /></div>                    
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                              <div class="amazingcarousel-image"><img src="images/2.png" /></div>                    
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                              <div class="amazingcarousel-image"><img src="images/3.png" /></div>                    
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                              <div class="amazingcarousel-image"><img src="images/5.png" /></div>                    
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                              <div class="amazingcarousel-image"><img src="images/6.png" /></div>                    
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                              <div class="amazingcarousel-image"><img src="images/7.png" /></div>                    
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                            <div class="amazingcarousel-image"><img src="images/8.png" /></div>                    
+                          </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                            <div class="amazingcarousel-image"><img src="images/9.png" /></div>                    
+                          </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                            <div class="amazingcarousel-image"><img src="images/10.png" /></div>                    
+                          </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                            <div class="amazingcarousel-image"><img src="images/12.png" /></div>                    
+                          </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                            <div class="amazingcarousel-image"><img src="images/13.png" /></div>                    
+                          </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+                            <div class="amazingcarousel-image"><img src="images/15.png" /></div>                    
+                          </div>
+                        </li>
+                    </ul>
+                    <div class="amazingcarousel-prev"></div>
+                    <div class="amazingcarousel-next"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End of body section HTML codes -->
+      </div>
+      <div lass="col-md-4 feature-description">
+        <div class=""> <br><br>
+          <h3 class="title blue">Servicios Integrales</h3>
+            <ul> 
+              <li> Mantención integral de aseo en oficinas.</li> 
+              <li> Limpieza y lavado de alfombras y pisos en general.</li> 
+              <li> Limpieza y lavado de persianas.</li> 
+              <li> Eliminación de sarro y pulido de griferías.</li> 
+              <li> Abrillantado de pisos duros.</li> 
+              <li> Limpieza de vidrios en altura.</li> 
+              <li> Limpieza, desinfección y sanitizado de baños completos, camarines y duchas.</li> 
+              <li> Eliminación de grafitis en muros y piedras.</li> 
+              <li> Lavado de fachadas.</li> 
+              <li> Limpieza de luminarias en altura y ductos extractores de aire.</li> 
+              <li> Mantención de áreas verdes.</li> 
+              <li> Poda de árboles y arbustos.</li> 
+            </ul> 
+          </div>
+      </div>
+      </div>
+  </section>
+
+<!-- CLIENTES -->
+  <section class="features">
+    <a name="CLientes"></a>
+    <h1 class="title blue margin-holder text-center"> Nuestros Clientes </h1>
+    <div class="container">
+      <!-- <div class="col-md-9 col-md-offset-1 feature-description"> -->
+      <div align="center">
+        <img src="img/clientes/clientes.png" alt="Nuestros clientes" class="img-responsive"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="grey-bg text-center last">
+    <a name="Contacto"></a>
+    <div class="container">
+      <h3 class="title blue extra-large-text"> Contáctenos </h3>
+      <div class="legend"> Puede tomar contacto con nosotros a traves de estos medios:  </div>
+      <div class="row">
+        <div class="col-md-3 col-md-offset-1 text-right">
+          <div class="feature-item">
+            <div>
+              <table>
+                <tr>
+                  <td><img src="img/icon/tel.png" WIDTH="30" HEIGHT="30"></td>
+                  <td align="left">+56 22 8580945</td>
+                </tr>
+                <tr>
+                  <td><BR><img src="img/icon/email.png" WIDTH="30" HEIGHT="30"></td>
+                  <td align="left"><BR><a href="mailto:info@rainigen.cl">info@rainigen.cl</a></td>
+                </tr>
+                <tr>
+                  <td><BR><img src="img/icon/address.png" WIDTH="30" HEIGHT="30"></td>
+                  <td align="left"><BR>Eyzaguirre 85 B14, San Bernardo, Santiago.</td>
+                </tr>
+                <tr>
+                  <td colspan="2"><BR><iframe src="https://www.google.com/maps/d/embed?mid=zK7AFxZumV2s.kdXa446JT_nY" width="450" height="280"></iframe></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-right feature-picture">  </div>
+
+        <div class="col-md-3 text-left">
+          <div class="feature-item">
+            <h3 class="title blue">Formulario</h3>
+              Su nombre:<br>
+              <input id="nombre" class="form-control" name="nombre" size="30" type="text"><br>
+              Su email:<br>
+              <input id="email" class="form-control" name="email" size="30" type="text"><br> 
+              Mensaje:<br>
+              <textarea id="mensaje" class="form-control" name="mensaje" rows="7" cols="30"></textarea><br>
+              <button class="btn btn-primary" type="button" onclick="enviarmsg()">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
+<script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID --> 
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-XXXXX-X');                                              
+  ga('send', 'pageview');                                                  
+
+  // Disable sonepage scroll for small displays
+  var detectmob = function() {
+      if (window.innerWidth <= 800 && window.innerHeight <= 800) {
+          return true;
+      } else {
+          return false;
+      }
+  }
+  var scale = 'scale(1.3, 1.3)';
+  var scaleDef = 'scale(1, 1)';
+  if (!detectmob()) {
+      document.write('<link href="css/onepage-scroll.css" rel="stylesheet">');
+      $(".wrap").onepage_scroll();
+  }
+  </script>
+</body>
+</html>

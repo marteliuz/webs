@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Video Background</title>
+
+
+
+<style>
+#vmain{
+    position:float;
+}
+video#bgvid{
+	min-width:100%;
+	min-height:100%;
+	width:auto;
+	height:auto;
+	background: url(the_desert-wide2.png) no-repeat top center; /* replace **image link** with your own file*/
+	background-size:cover;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+</style>
+
+
+</head>
+
+<body>
+<div id="main" align="center">
+	<!-- <img id="logo" src="resources/logo.jpg" alt="Logo" style="max-width:30%;"/> -->
+	<!-- <img id="logo" src="resources/logo.jpg" alt="Logo"/> -->
+</div>
+<video id="bgvid" autoplay loop poster="the_desert-wide2.png"> <!-- replace **image link** with your own file -->
+<source src="resources/carnespradera.mp4" type="video/mp4" /><!-- replace **video link** with your own file -->
+</video>
+</body>
+</html>
